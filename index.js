@@ -68,13 +68,10 @@ io.on('connection', async (socket) => {
     }
   });
 
-  });
   socket.on('disconnect', () => {
     console.log('user disconnected', socket.id);
   });
-  connectionStateRecovery: {
-
-  }
+});
 
 const PORT = process.env.PORT || 3000;
 server.listen(3000, () => {
