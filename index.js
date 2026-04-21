@@ -9,7 +9,7 @@ const server = createServer(app);
 
 const io = new Server(server,{
   cors: {
-    origin: procces.env.CLIENT_URL || 'http://localhost:5173',
+    origin: process.env.CLIENT_URL || 'http://localhost:5173',
     methods: ['GET', 'POST'],
     credentials: true
   } 
