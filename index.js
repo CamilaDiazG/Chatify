@@ -28,8 +28,6 @@ await pool.query(`
   );
 `);
 
-io.listen(4000);
-
 app.get('/', (req, res) => {
   res.send('<h1>Hello world</h1>');
 });
